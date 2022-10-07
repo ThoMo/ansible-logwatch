@@ -11,4 +11,4 @@
 
 - name: Configure logwatch
   template: src=logwatch.conf.j2 dest=/etc/logwatch/conf/logwatch.conf
-  tags: [ 'configuration', 'package', 'logwatch' ]
+  tags: [ 'config', 'logwatch' ]
