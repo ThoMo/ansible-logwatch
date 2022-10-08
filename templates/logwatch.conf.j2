@@ -4,6 +4,8 @@
 # To modify: change configuration in Ansible role {{ role_path | basename }}
 #
 
+# Local configuration options go here (defaults are in /usr/share/logwatch/default.conf/logwatch.conf)
+
 {% if logwatch_mail_to %}
 MailTo = {{ logwatch_mail_to }}
 {% endif %}

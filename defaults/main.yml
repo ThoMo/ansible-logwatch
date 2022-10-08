@@ -1,4 +1,5 @@
 ---
+logwatch_enable: false
 
 # default is root
 logwatch_mail_to: 'root'
