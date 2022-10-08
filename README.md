@@ -1,4 +1,4 @@
-Ansible Role: thomo.logwatch [![Build Status](https://travis-ci.com/thomo/ansible-logwatch.svg?branch=main)](https://travis-ci.com/thomo/ansible-logwatch)
+Ansible Role: thomo.logwatch [![Build Status](https://app.travis-ci.com/thomo/ansible-logwatch.svg?branch=main)](https://app.travis-ci.com/thomo/ansible-logwatch)
 ========
 
 Ansible role to install and configure logwatch.
