@@ -5,9 +5,6 @@ language: python
 python: "2.7"
 
 before_install:
-  # logwatch should be installed by the role itself
-  - sudo apt-get -m remove logwatch
-
   # Make sure everything's up to date.
   - sudo apt-get update -qq
   - pip install --upgrade pip
