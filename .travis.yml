@@ -2,7 +2,7 @@
 # based on https://servercheck.in/blog/testing-ansible-roles-travis-ci-github
 
 language: python
-python: "2.7"
+python: "3.9"
 
 before_install:
   # Make sure everything's up to date.
