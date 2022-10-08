@@ -1,14 +1,12 @@
 ---
-- name: Install the logwatch packages in Redhat derivatives
-  yum: name=logwatch state=present
-  when: ansible_os_family == 'RedHat'
-  tags: [ 'logwatch', 'logwatch-package' ]
-
-- name: Install the logwatch packages in Debian derivatives
-  apt: name=logwatch state=present
-  when: ansible_os_family == 'Debian'
+- name: Install the logwatch packages 
+  ansible.builtin.package: 
+    name: logwatch 
+    state: present
   tags: [ 'logwatch', 'logwatch-package' ]
 
 - name: Configure logwatch
-  template: src=logwatch.conf.j2 dest=/etc/logwatch/conf/logwatch.conf
+  ansible.builtin.template: 
+    src: logwatch.conf.j2 
+    dest: /etc/logwatch/conf/logwatch.conf
   tags: [ 'logwatch', 'logwatch-config' ]
