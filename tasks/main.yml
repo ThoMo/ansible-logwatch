@@ -3,10 +3,14 @@
   ansible.builtin.package: 
     name: logwatch 
     state: present
-  tags: [ 'logwatch', 'logwatch-package' ]
+  tags: 
+    - logwatch
+    - logwatch-package
 
 - name: Configure logwatch
   ansible.builtin.template: 
     src: logwatch.conf.j2 
     dest: /etc/logwatch/conf/logwatch.conf
-  tags: [ 'logwatch', 'logwatch-config' ]
+  tags: 
+    - logwatch
+    - logwatch-config
