@@ -1,5 +1,6 @@
 ---
-logwatch_enable: false
+# vim:ff=unix ts=2 sw=2 ai expandtab
+# code: language=ansible
 
 # default is root
 logwatch_mail_to: 'root'
@@ -37,5 +38,5 @@ logwatch_hostname: ''
 # Number of characters that html output should be wrapped to. Default is 80.
 logwatch_html_wrap: 80
 
-#Inhibits additional name lookups, displaying IP addresses numerically.
+# Inhibits additional name lookups, displaying IP addresses numerically.
 logwatch_numeric: 'No'

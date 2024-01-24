@@ -1,4 +1,6 @@
 ---
+# vim:ff=unix ts=2 sw=2 ai expandtab
+# code: language=ansible
 - hosts: localhost
   remote_user: root
   roles:

@@ -1,4 +1,6 @@
 ---
+# vim:ff=unix ts=2 sw=2 ai expandtab
+# code: language=ansible
 - name: Install the logwatch packages 
   ansible.builtin.package: 
     name: logwatch 
